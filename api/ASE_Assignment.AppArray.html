@@ -1,0 +1,964 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AppArray
+   | BOOSEapp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AppArray
+   | BOOSEapp Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ASE_Assignment.AppArray">
+  
+  
+  <h1 id="ASE_Assignment_AppArray" data-uid="ASE_Assignment.AppArray" class="text-break">Class AppArray
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a one- or two-dimensional array variable within the BOOSE
+execution environment.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AppArray</span></div>
+      <div class="level2"><a class="xref" href="ASE_Assignment.AppPeek.html">AppPeek</a></div>
+      <div class="level2"><a class="xref" href="ASE_Assignment.AppPoke.html">AppPoke</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ASE_Assignment.html">ASE_Assignment</a></h6>
+  <h6><strong>Assembly</strong>: ASE_Assignment.dll</h6>
+  <h5 id="ASE_Assignment_AppArray_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AppArray : Evaluation</code></pre>
+  </div>
+  <h5 id="ASE_Assignment_AppArray_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class supports declaration, allocation, and indexed access
+(peek and poke operations) for integer and real arrays.
+Array indices and values may be expressions evaluated at runtime.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="ASE_Assignment_AppArray__ctor_" data-uid="ASE_Assignment.AppArray.#ctor*"></a>
+  <h4 id="ASE_Assignment_AppArray__ctor" data-uid="ASE_Assignment.AppArray.#ctor">AppArray()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="ASE_Assignment.AppArray.html">AppArray</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppArray()</code></pre>
+  </div>
+  <h5 id="ASE_Assignment_AppArray__ctor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This constructor performs no initialization beyond emitting
+a debug trace message.</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_column" data-uid="ASE_Assignment.AppArray.column">column</h4>
+  <div class="markdown level1 summary"><p>Stores the evaluated column index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int column</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_columns" data-uid="ASE_Assignment.AppArray.columns">columns</h4>
+  <div class="markdown level1 summary"><p>Stores the column index expression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int columns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_columnS" data-uid="ASE_Assignment.AppArray.columnS">columnS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string columnS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_intArray" data-uid="ASE_Assignment.AppArray.intArray">intArray</h4>
+  <div class="markdown level1 summary"><p>Backing storage for integer arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[, ] intArray</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[,]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_PEEK" data-uid="ASE_Assignment.AppArray.PEEK">PEEK</h4>
+  <div class="markdown level1 summary"><p>Indicates a peek (read) operation on an array element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const bool PEEK = false</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_peekVar" data-uid="ASE_Assignment.AppArray.peekVar">peekVar</h4>
+  <div class="markdown level1 summary"><p>Stores the variable name used during a peek operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string peekVar</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_POKE" data-uid="ASE_Assignment.AppArray.POKE">POKE</h4>
+  <div class="markdown level1 summary"><p>Indicates a poke (write) operation on an array element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const bool POKE = true</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_pokeValue" data-uid="ASE_Assignment.AppArray.pokeValue">pokeValue</h4>
+  <div class="markdown level1 summary"><p>Stores the value expression used during a poke operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string pokeValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_realArray" data-uid="ASE_Assignment.AppArray.realArray">realArray</h4>
+  <div class="markdown level1 summary"><p>Backing storage for real arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected double[, ] realArray</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[,]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_row" data-uid="ASE_Assignment.AppArray.row">row</h4>
+  <div class="markdown level1 summary"><p>Stores the evaluated row index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int row</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_rows" data-uid="ASE_Assignment.AppArray.rows">rows</h4>
+  <div class="markdown level1 summary"><p>Stores the row index expression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int rows</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_rowS" data-uid="ASE_Assignment.AppArray.rowS">rowS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string rowS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_type" data-uid="ASE_Assignment.AppArray.type">type</h4>
+  <div class="markdown level1 summary"><p>Stores the declared array element type (<code>int</code> or <code>real</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string type</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_valueInt" data-uid="ASE_Assignment.AppArray.valueInt">valueInt</h4>
+  <div class="markdown level1 summary"><p>Stores an integer value used during array access.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int valueInt</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppArray_valueReal" data-uid="ASE_Assignment.AppArray.valueReal">valueReal</h4>
+  <div class="markdown level1 summary"><p>Stores a real value used during array access.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected double valueReal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="ASE_Assignment_AppArray_Columns_" data-uid="ASE_Assignment.AppArray.Columns*"></a>
+  <h4 id="ASE_Assignment_AppArray_Columns" data-uid="ASE_Assignment.AppArray.Columns">Columns</h4>
+  <div class="markdown level1 summary"><p>Gets the number of columns in the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int Columns { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ASE_Assignment_AppArray_Rows_" data-uid="ASE_Assignment.AppArray.Rows*"></a>
+  <h4 id="ASE_Assignment_AppArray_Rows" data-uid="ASE_Assignment.AppArray.Rows">Rows</h4>
+  <div class="markdown level1 summary"><p>Gets the number of rows in the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int Rows { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ASE_Assignment_AppArray_CheckParameters_" data-uid="ASE_Assignment.AppArray.CheckParameters*"></a>
+  <h4 id="ASE_Assignment_AppArray_CheckParameters_System_String___" data-uid="ASE_Assignment.AppArray.CheckParameters(System.String[])">CheckParameters(String[])</h4>
+  <div class="markdown level1 summary"><p>Validates the parameters supplied to the array declaration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] parameterList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">parameterList</span></td>
+        <td><p>The parameter list supplied with the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ASE_Assignment_AppArray_CheckParameters_System_String____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Valid formats:
+<ul><li><code>type name rows</code></li><li><code>type name rows columns</code></li></ul></p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BOOSE.CommandException</span></td>
+        <td><p>Thrown when the parameter count does not match the expected format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ASE_Assignment_AppArray_Compile_" data-uid="ASE_Assignment.AppArray.Compile*"></a>
+  <h4 id="ASE_Assignment_AppArray_Compile" data-uid="ASE_Assignment.AppArray.Compile">Compile()</h4>
+  <div class="markdown level1 summary"><p>Compiles the array declaration by validating syntax and
+registering the array variable with the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Compile()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BOOSE.CommandException</span></td>
+        <td><p>Thrown when the array declaration syntax or type is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ASE_Assignment_AppArray_Execute_" data-uid="ASE_Assignment.AppArray.Execute*"></a>
+  <h4 id="ASE_Assignment_AppArray_Execute" data-uid="ASE_Assignment.AppArray.Execute">Execute()</h4>
+  <div class="markdown level1 summary"><p>Executes the array declaration by allocating the underlying storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Execute()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BOOSE.CommandException</span></td>
+        <td><p>Thrown when an unsupported array type is encountered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ASE_Assignment_AppArray_GetIntArray_" data-uid="ASE_Assignment.AppArray.GetIntArray*"></a>
+  <h4 id="ASE_Assignment_AppArray_GetIntArray_System_Int32_System_Int32_" data-uid="ASE_Assignment.AppArray.GetIntArray(System.Int32,System.Int32)">GetIntArray(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a value from an integer array at the specified indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetIntArray(int row, int col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ASE_Assignment_AppArray_GetRealArray_" data-uid="ASE_Assignment.AppArray.GetRealArray*"></a>
+  <h4 id="ASE_Assignment_AppArray_GetRealArray_System_Int32_System_Int32_" data-uid="ASE_Assignment.AppArray.GetRealArray(System.Int32,System.Int32)">GetRealArray(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a value from a real array at the specified indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double GetRealArray(int row, int col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ASE_Assignment_AppArray_ProcessArrayParametersCompile_" data-uid="ASE_Assignment.AppArray.ProcessArrayParametersCompile*"></a>
+  <h4 id="ASE_Assignment_AppArray_ProcessArrayParametersCompile_System_Boolean_" data-uid="ASE_Assignment.AppArray.ProcessArrayParametersCompile(System.Boolean)">ProcessArrayParametersCompile(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Processes array access parameters during compilation
+for peek and poke operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessArrayParametersCompile(bool peekOrPoke)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">peekOrPoke</span></td>
+        <td><p><a class="xref" href="ASE_Assignment.AppArray.html#ASE_Assignment_AppArray_PEEK">PEEK</a> for read operations,
+<a class="xref" href="ASE_Assignment.AppArray.html#ASE_Assignment_AppArray_POKE">POKE</a> for write operations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BOOSE.CommandException</span></td>
+        <td><p>Thrown when the array access syntax is invalid or
+the array variable does not exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ASE_Assignment_AppArray_ProcessArrayParametersExecute_" data-uid="ASE_Assignment.AppArray.ProcessArrayParametersExecute*"></a>
+  <h4 id="ASE_Assignment_AppArray_ProcessArrayParametersExecute_System_Boolean_" data-uid="ASE_Assignment.AppArray.ProcessArrayParametersExecute(System.Boolean)">ProcessArrayParametersExecute(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Processes array access parameters during execution
+for peek and poke operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ProcessArrayParametersExecute(bool peekOrPoke)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">peekOrPoke</span></td>
+        <td><p><a class="xref" href="ASE_Assignment.AppArray.html#ASE_Assignment_AppArray_PEEK">PEEK</a> for read operations,
+<a class="xref" href="ASE_Assignment.AppArray.html#ASE_Assignment_AppArray_POKE">POKE</a> for write operations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BOOSE.CommandException</span></td>
+        <td><p>Thrown when index evaluation fails, indices are out of bounds,
+or type mismatches occur.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ASE_Assignment_AppArray_SetIntArray_" data-uid="ASE_Assignment.AppArray.SetIntArray*"></a>
+  <h4 id="ASE_Assignment_AppArray_SetIntArray_System_Int32_System_Int32_System_Int32_" data-uid="ASE_Assignment.AppArray.SetIntArray(System.Int32,System.Int32,System.Int32)">SetIntArray(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets a value in an integer array at the specified indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetIntArray(int val, int row, int col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ASE_Assignment_AppArray_SetRealArray_" data-uid="ASE_Assignment.AppArray.SetRealArray*"></a>
+  <h4 id="ASE_Assignment_AppArray_SetRealArray_System_Double_System_Int32_System_Int32_" data-uid="ASE_Assignment.AppArray.SetRealArray(System.Double,System.Int32,System.Int32)">SetRealArray(Double, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets a value in a real array at the specified indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetRealArray(double val, int row, int col)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">col</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

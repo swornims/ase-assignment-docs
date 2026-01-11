@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AppParser
+   | BOOSEapp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AppParser
+   | BOOSEapp Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ASE_Assignment.AppParser">
+  
+  
+  <h1 id="ASE_Assignment_AppParser" data-uid="ASE_Assignment.AppParser" class="text-break">Class AppParser
+  </h1>
+  <div class="markdown level0 summary"><p>Parser class for analyzing and converting BOOSE program text into executable commands.
+Handles variable declarations, control structures (if, while, for), arrays, methods, and drawing commands.
+Implements the IParser interface from the BOOSE library.
+Bypasses BOOSE library restrictions by resetting static counters.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AppParser</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">BOOSE.IParser</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ASE_Assignment.html">ASE_Assignment</a></h6>
+  <h6><strong>Assembly</strong>: ASE_Assignment.dll</h6>
+  <h5 id="ASE_Assignment_AppParser_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AppParser : Object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="ASE_Assignment_AppParser__ctor_" data-uid="ASE_Assignment.AppParser.#ctor*"></a>
+  <h4 id="ASE_Assignment_AppParser__ctor_ASE_Assignment_AppCommandFactory_ASE_Assignment_AppStoredProgram_" data-uid="ASE_Assignment.AppParser.#ctor(ASE_Assignment.AppCommandFactory,ASE_Assignment.AppStoredProgram)">AppParser(AppCommandFactory, AppStoredProgram)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the BooseParser class with a command factory and program context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppParser(AppCommandFactory commandFactory, AppStoredProgram Program)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ASE_Assignment.AppCommandFactory.html">AppCommandFactory</a></td>
+        <td><span class="parametername">commandFactory</span></td>
+        <td><p>The factory used to create command instances.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ASE_Assignment.AppStoredProgram.html">AppStoredProgram</a></td>
+        <td><span class="parametername">Program</span></td>
+        <td><p>The stored program that will hold the parsed commands.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="ASE_Assignment_AppParser_commandFactory" data-uid="ASE_Assignment.AppParser.commandFactory">commandFactory</h4>
+  <div class="markdown level1 summary"><p>The command factory used to create command instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AppCommandFactory commandFactory</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ASE_Assignment.AppCommandFactory.html">AppCommandFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ASE_Assignment_AppParser_StoredProgram" data-uid="ASE_Assignment.AppParser.StoredProgram">StoredProgram</h4>
+  <div class="markdown level1 summary"><p>The stored program that will hold the parsed commands.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AppStoredProgram StoredProgram</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ASE_Assignment.AppStoredProgram.html">AppStoredProgram</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ASE_Assignment_AppParser_ParseCommand_" data-uid="ASE_Assignment.AppParser.ParseCommand*"></a>
+  <h4 id="ASE_Assignment_AppParser_ParseCommand_System_String_" data-uid="ASE_Assignment.AppParser.ParseCommand(System.String)">ParseCommand(String)</h4>
+  <div class="markdown level1 summary"><p>Parses a single line of BOOSE code and converts it into a command object.
+Handles comments (lines starting with *), variable declarations, assignments, control structures, arrays, and methods.
+Special handling for &apos;for&apos; loops to preserve negative step values.
+Resets BOOSE counters before parsing to bypass restrictions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ICommand ParseCommand(string Line)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Line</span></td>
+        <td><p>The line of code to parse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BOOSE.ICommand</span></td>
+        <td><p>The parsed command object, or null if the line is empty or a comment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BOOSE.ParserException</span></td>
+        <td><p>Thrown when syntax errors are detected, invalid types are specified, or undefined variables are used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ASE_Assignment_AppParser_ParseProgram_" data-uid="ASE_Assignment.AppParser.ParseProgram*"></a>
+  <h4 id="ASE_Assignment_AppParser_ParseProgram_System_String_" data-uid="ASE_Assignment.AppParser.ParseProgram(System.String)">ParseProgram(String)</h4>
+  <div class="markdown level1 summary"><p>Parses an entire BOOSE program by splitting it into lines and parsing each line individually.
+Empty lines and whitespace-only lines are skipped.
+Resets BOOSE counters before parsing the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ParseProgram(string program)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">program</span></td>
+        <td><p>The complete program text to parse, with commands separated by newlines.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">BOOSE.IParser</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

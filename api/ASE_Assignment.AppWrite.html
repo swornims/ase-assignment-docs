@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AppWrite
+   | BOOSEapp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AppWrite
+   | BOOSEapp Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ASE_Assignment.AppWrite">
+  
+  
+  <h1 id="ASE_Assignment_AppWrite" data-uid="ASE_Assignment.AppWrite" class="text-break">Class AppWrite
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a <code>write</code> command that outputs text or evaluated expressions
+to the program&apos;s drawing canvas.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AppWrite</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ASE_Assignment.html">ASE_Assignment</a></h6>
+  <h6><strong>Assembly</strong>: ASE_Assignment.dll</h6>
+  <h5 id="ASE_Assignment_AppWrite_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AppWrite : CommandOneParameter</code></pre>
+  </div>
+  <h5 id="ASE_Assignment_AppWrite_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This command accepts a single parameter, which may be either a literal
+string or an expression. If the parameter can be evaluated as an expression,
+the evaluated result is written; otherwise, the raw text is written.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="ASE_Assignment_AppWrite__ctor_" data-uid="ASE_Assignment.AppWrite.#ctor*"></a>
+  <h4 id="ASE_Assignment_AppWrite__ctor" data-uid="ASE_Assignment.AppWrite.#ctor">AppWrite()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="ASE_Assignment.AppWrite.html">AppWrite</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppWrite()</code></pre>
+  </div>
+  <h5 id="ASE_Assignment_AppWrite__ctor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This constructor performs no initialization beyond emitting a debug trace.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ASE_Assignment_AppWrite_CheckParameters_" data-uid="ASE_Assignment.AppWrite.CheckParameters*"></a>
+  <h4 id="ASE_Assignment_AppWrite_CheckParameters_System_String___" data-uid="ASE_Assignment.AppWrite.CheckParameters(System.String[])">CheckParameters(String[])</h4>
+  <div class="markdown level1 summary"><p>Validates and parses the parameters supplied to the <code>write</code> command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameter list supplied with the command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ASE_Assignment_AppWrite_CheckParameters_System_String____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Surrounding quotation marks are removed from the parameter, if present.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BOOSE.ParserException</span></td>
+        <td><p>Thrown when the command does not receive exactly one parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ASE_Assignment_AppWrite_Execute_" data-uid="ASE_Assignment.AppWrite.Execute*"></a>
+  <h4 id="ASE_Assignment_AppWrite_Execute" data-uid="ASE_Assignment.AppWrite.Execute">Execute()</h4>
+  <div class="markdown level1 summary"><p>Executes the <code>write</code> command by outputting text to the canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Execute()</code></pre>
+  </div>
+  <h5 id="ASE_Assignment_AppWrite_Execute_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the provided parameter represents a valid expression, it is evaluated
+prior to output. Otherwise, the parameter is treated as a literal string.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BOOSE.CommandException</span></td>
+        <td><p>Thrown when execution fails due to invalid input, expression evaluation
+errors, or an uninitialized canvas.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ASE_Assignment_AppWrite_SetCanvas_" data-uid="ASE_Assignment.AppWrite.SetCanvas*"></a>
+  <h4 id="ASE_Assignment_AppWrite_SetCanvas_System_Object_" data-uid="ASE_Assignment.AppWrite.SetCanvas(System.Object)">SetCanvas(Object)</h4>
+  <div class="markdown level1 summary"><p>Sets the canvas used by the write command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCanvas(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>An object representing the canvas instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ASE_Assignment_AppWrite_SetCanvas_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is currently unused and provided only to satisfy
+interface or framework requirements.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotImplementedException</span></td>
+        <td><p>Always thrown, as this method is not implemented.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
