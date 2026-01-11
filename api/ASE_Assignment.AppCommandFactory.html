@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class AppCommandFactory
-   | BOOSEapp Documentation </title>
+   </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AppCommandFactory
-   | BOOSEapp Documentation ">
+   ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -19,7 +19,7 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    <meta property="docfx:rel" content="../">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -58,16 +58,6 @@
           </div>
         </div>
       </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
-          </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
-        </div>
-      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -89,16 +79,22 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">AppCommandFactory</span></div>
+    <div class="level1"><a class="xref" href="BOOSE.CommandFactory.html">CommandFactory</a></div>
+    <div class="level2"><span class="xref">AppCommandFactory</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="BOOSE.ICommandFactory.html">ICommandFactory</a></div>
+    <div><a class="xref" href="ASE_Assignment.IAppCommandFactory.html">IAppCommandFactory</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ASE_Assignment.html">ASE_Assignment</a></h6>
   <h6><strong>Assembly</strong>: ASE_Assignment.dll</h6>
   <h5 id="ASE_Assignment_AppCommandFactory_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppCommandFactory : CommandFactory</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppCommandFactory : CommandFactory, ICommandFactory, IAppCommandFactory</code></pre>
   </div>
   <h5 id="ASE_Assignment_AppCommandFactory_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>This factory extends <span class="xref">BOOSE.CommandFactory</span> and adds support
+  <div class="markdown level0 remarks"><p>This factory extends <a class="xref" href="BOOSE.CommandFactory.html">CommandFactory</a> and adds support
 for custom commands such as circle, rectangle, moveto, drawto, and pen.</p>
 </div>
   <h3 id="constructors">Constructors
@@ -155,12 +151,14 @@ for custom commands such as circle, rectangle, moveto, drawto, and pen.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.ICommand</span></td>
-        <td><p>An instance of a class that implements <span class="xref">BOOSE.ICommand</span>.</p>
+        <td><a class="xref" href="BOOSE.ICommand.html">ICommand</a></td>
+        <td><p>An instance of a class that implements <a class="xref" href="BOOSE.ICommand.html">ICommand</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BOOSE.CommandFactory.html#BOOSE_CommandFactory_MakeCommand_System_String_">CommandFactory.MakeCommand(String)</a></div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -178,6 +176,13 @@ or the base factory.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="BOOSE.ICommandFactory.html">ICommandFactory</a>
+  </div>
+  <div>
+      <a class="xref" href="ASE_Assignment.IAppCommandFactory.html">IAppCommandFactory</a>
+  </div>
 </article>
           </div>
           

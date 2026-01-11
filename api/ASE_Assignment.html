@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Namespace ASE_Assignment
-   | BOOSEapp Documentation </title>
+   </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace ASE_Assignment
-   | BOOSEapp Documentation ">
+   ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -19,7 +19,7 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    <meta property="docfx:rel" content="../">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -58,16 +58,6 @@
           </div>
         </div>
       </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
-          </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
-        </div>
-      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -101,7 +91,8 @@ within the BOOSE program execution environment.</p>
 </section>
       <h4><a class="xref" href="ASE_Assignment.AppCanvas.html">AppCanvas</a></h4>
       <section><p>Represents a drawable canvas that supports shapes, lines, text, and color operations.
-Provides methods required by the BOOSE <span class="xref">BOOSE.ICanvas</span> interface.</p>
+Provides methods required by the BOOSE <a class="xref" href="BOOSE.ICanvas.html">ICanvas</a> interface.
+Implements the Singleton pattern to ensure only one drawing surface exists.</p>
 </section>
       <h4><a class="xref" href="ASE_Assignment.AppCircle.html">AppCircle</a></h4>
       <section><p>Represents the command that draws a circle on the canvas.</p>
@@ -166,7 +157,7 @@ Supports both filled and unfilled rectangles based on parameters.</p>
 </section>
       <h4><a class="xref" href="ASE_Assignment.AppStoredProgram.html">AppStoredProgram</a></h4>
       <section><p>Represents a stored program with conditional command stack functionality.
-Inherits from the <span class="xref">BOOSE.StoredProgram</span> class and provides custom implementations for managing commands.</p>
+Inherits from the <a class="xref" href="BOOSE.StoredProgram.html">StoredProgram</a> class and provides custom implementations for managing commands.</p>
 </section>
       <h4><a class="xref" href="ASE_Assignment.AppWhile.html">AppWhile</a></h4>
       <section><p>Represents a <code>while</code> loop command that repeatedly executes
@@ -179,6 +170,12 @@ to the program&apos;s drawing canvas.</p>
       <h4><a class="xref" href="ASE_Assignment.Form1.html">Form1</a></h4>
       <section><p>Main Windows Form responsible for initializing the BOOSE environment,
 handling UI events, and executing user-defined programs on the canvas.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="ASE_Assignment.IAppCommandFactory.html">IAppCommandFactory</a></h4>
+      <section><p>Defines a factory interface for creating application-specific
+<a class="xref" href="BOOSE.ICommand.html">ICommand</a> instances.</p>
 </section>
 </article>
           </div>

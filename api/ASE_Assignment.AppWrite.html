@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class AppWrite
-   | BOOSEapp Documentation </title>
+   </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AppWrite
-   | BOOSEapp Documentation ">
+   ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -19,7 +19,7 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    <meta property="docfx:rel" content="../">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -58,16 +58,6 @@
           </div>
         </div>
       </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
-          </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
-        </div>
-      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -90,13 +80,83 @@ to the program&apos;s drawing canvas.</p>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">AppWrite</span></div>
+    <div class="level1"><a class="xref" href="BOOSE.Command.html">Command</a></div>
+    <div class="level2"><a class="xref" href="BOOSE.CanvasCommand.html">CanvasCommand</a></div>
+    <div class="level3"><a class="xref" href="BOOSE.CommandOneParameter.html">CommandOneParameter</a></div>
+    <div class="level4"><span class="xref">AppWrite</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="BOOSE.ICommand.html">ICommand</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BOOSE.CommandOneParameter.html#BOOSE_CommandOneParameter_param1">CommandOneParameter.param1</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.CommandOneParameter.html#BOOSE_CommandOneParameter_param1unprocessed">CommandOneParameter.param1unprocessed</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.CanvasCommand.html#BOOSE_CanvasCommand_yPos">CanvasCommand.yPos</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.CanvasCommand.html#BOOSE_CanvasCommand_xPos">CanvasCommand.xPos</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.CanvasCommand.html#BOOSE_CanvasCommand_canvas">CanvasCommand.canvas</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.CanvasCommand.html#BOOSE_CanvasCommand_Canvas">CanvasCommand.Canvas</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_IsDouble">Command.IsDouble</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_program">Command.program</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_parameterList">Command.parameterList</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_parameters">Command.parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_paramsint">Command.paramsint</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_Set_BOOSE_StoredProgram_System_String_">Command.Set(StoredProgram, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_Compile">Command.Compile()</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_ProcessParameters_System_String_">Command.ProcessParameters(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_ToString">Command.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_Program">Command.Program</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_Name">Command.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_ParameterList">Command.ParameterList</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_Parameters">Command.Parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.Command.html#BOOSE_Command_Paramsint">Command.Paramsint</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ASE_Assignment.html">ASE_Assignment</a></h6>
   <h6><strong>Assembly</strong>: ASE_Assignment.dll</h6>
   <h5 id="ASE_Assignment_AppWrite_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppWrite : CommandOneParameter</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppWrite : CommandOneParameter, ICommand</code></pre>
   </div>
   <h5 id="ASE_Assignment_AppWrite_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>This command accepts a single parameter, which may be either a literal
@@ -150,6 +210,8 @@ the evaluated result is written; otherwise, the raw text is written.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BOOSE.CommandOneParameter.html#BOOSE_CommandOneParameter_CheckParameters_System_String___">CommandOneParameter.CheckParameters(String[])</a></div>
   <h5 id="ASE_Assignment_AppWrite_CheckParameters_System_String____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Surrounding quotation marks are removed from the parameter, if present.</p>
 </div>
@@ -163,7 +225,7 @@ the evaluated result is written; otherwise, the raw text is written.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.ParserException</span></td>
+        <td><a class="xref" href="BOOSE.ParserException.html">ParserException</a></td>
         <td><p>Thrown when the command does not receive exactly one parameter.</p>
 </td>
       </tr>
@@ -180,6 +242,8 @@ the evaluated result is written; otherwise, the raw text is written.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void Execute()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BOOSE.Command.html#BOOSE_Command_Execute">Command.Execute()</a></div>
   <h5 id="ASE_Assignment_AppWrite_Execute_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If the provided parameter represents a valid expression, it is evaluated
 prior to output. Otherwise, the parameter is treated as a literal string.</p>
@@ -194,7 +258,7 @@ prior to output. Otherwise, the parameter is treated as a literal string.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.CommandException</span></td>
+        <td><a class="xref" href="BOOSE.CommandException.html">CommandException</a></td>
         <td><p>Thrown when execution fails due to invalid input, expression evaluation
 errors, or an uninitialized canvas.</p>
 </td>
@@ -250,6 +314,10 @@ interface or framework requirements.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="BOOSE.ICommand.html">ICommand</a>
+  </div>
 </article>
           </div>
           

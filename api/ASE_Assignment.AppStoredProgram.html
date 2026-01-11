@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class AppStoredProgram
-   | BOOSEapp Documentation </title>
+   </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AppStoredProgram
-   | BOOSEapp Documentation ">
+   ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -19,7 +19,7 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    <meta property="docfx:rel" content="../">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -58,16 +58,6 @@
           </div>
         </div>
       </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
-          </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
-        </div>
-      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -84,23 +74,96 @@
   <h1 id="ASE_Assignment_AppStoredProgram" data-uid="ASE_Assignment.AppStoredProgram" class="text-break">Class AppStoredProgram
   </h1>
   <div class="markdown level0 summary"><p>Represents a stored program with conditional command stack functionality.
-Inherits from the <span class="xref">BOOSE.StoredProgram</span> class and provides custom implementations for managing commands.</p>
+Inherits from the <a class="xref" href="BOOSE.StoredProgram.html">StoredProgram</a> class and provides custom implementations for managing commands.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">AppStoredProgram</span></div>
+    <div class="level1"><a class="xref" href="BOOSE.StoredProgram.html">StoredProgram</a></div>
+    <div class="level2"><span class="xref">AppStoredProgram</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><span class="xref">BOOSE.IStoredProgram</span></div>
+    <div><a class="xref" href="BOOSE.IStoredProgram.html">IStoredProgram</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_IsValidProgram">StoredProgram.IsValidProgram()</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_SetSyntaxStatus_System_Boolean_">StoredProgram.SetSyntaxStatus(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_AddMethod_BOOSE_Method_">StoredProgram.AddMethod(Method)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_GetMethod_System_String_">StoredProgram.GetMethod(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_AddVariable_BOOSE_Evaluation_">StoredProgram.AddVariable(Evaluation)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_GetVariable_System_String_">StoredProgram.GetVariable(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_GetVariable_System_Int32_">StoredProgram.GetVariable(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_FindVariable_BOOSE_Evaluation_">StoredProgram.FindVariable(Evaluation)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_FindVariable_System_String_">StoredProgram.FindVariable(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_VariableExists_System_String_">StoredProgram.VariableExists(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_GetVarValue_System_String_">StoredProgram.GetVarValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_UpdateVariable_System_String_System_Int32_">StoredProgram.UpdateVariable(String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_UpdateVariable_System_String_System_Double_">StoredProgram.UpdateVariable(String, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_UpdateVariable_System_String_System_Boolean_">StoredProgram.UpdateVariable(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_DeleteVariable_System_String_">StoredProgram.DeleteVariable(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_IsExpression_System_String_">StoredProgram.IsExpression(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_EvaluateExpressionWithString_System_String_">StoredProgram.EvaluateExpressionWithString(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_EvaluateExpression_System_String_">StoredProgram.EvaluateExpression(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_Add_BOOSE_Command_">StoredProgram.Add(Command)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_NextCommand">StoredProgram.NextCommand()</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_ResetProgram">StoredProgram.ResetProgram()</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_Commandsleft">StoredProgram.Commandsleft()</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_PC">StoredProgram.PC</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ASE_Assignment.html">ASE_Assignment</a></h6>
   <h6><strong>Assembly</strong>: ASE_Assignment.dll</h6>
   <h5 id="ASE_Assignment_AppStoredProgram_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppStoredProgram : StoredProgram</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppStoredProgram : StoredProgram, IStoredProgram</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -126,7 +189,7 @@ Inherits from the <span class="xref">BOOSE.StoredProgram</span> class and provid
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.ICanvas</span></td>
+        <td><a class="xref" href="BOOSE.ICanvas.html">ICanvas</a></td>
         <td><span class="parametername">canvas</span></td>
         <td><p>The canvas to be used by the stored program.</p>
 </td>
@@ -156,12 +219,14 @@ Inherits from the <span class="xref">BOOSE.StoredProgram</span> class and provid
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.ConditionalCommand</span></td>
+        <td><a class="xref" href="BOOSE.ConditionalCommand.html">ConditionalCommand</a></td>
         <td><p>The conditional command popped from the stack.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_Pop">StoredProgram.Pop()</a></div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -172,7 +237,7 @@ Inherits from the <span class="xref">BOOSE.StoredProgram</span> class and provid
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.StoredProgramException</span></td>
+        <td><a class="xref" href="BOOSE.StoredProgramException.html">StoredProgramException</a></td>
         <td><p>Thrown if there is an attempt to pop from an empty stack.</p>
 </td>
       </tr>
@@ -200,13 +265,15 @@ Inherits from the <span class="xref">BOOSE.StoredProgram</span> class and provid
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.ConditionalCommand</span></td>
+        <td><a class="xref" href="BOOSE.ConditionalCommand.html">ConditionalCommand</a></td>
         <td><span class="parametername">Com</span></td>
         <td><p>The conditional command to push onto the stack.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_Push_BOOSE_ConditionalCommand_">StoredProgram.Push(ConditionalCommand)</a></div>
   
   
   <a id="ASE_Assignment_AppStoredProgram_Run_" data-uid="ASE_Assignment.AppStoredProgram.Run*"></a>
@@ -218,6 +285,8 @@ Inherits from the <span class="xref">BOOSE.StoredProgram</span> class and provid
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void Run()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BOOSE.StoredProgram.html#BOOSE_StoredProgram_Run">StoredProgram.Run()</a></div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -228,7 +297,7 @@ Inherits from the <span class="xref">BOOSE.StoredProgram</span> class and provid
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.StoredProgramException</span></td>
+        <td><a class="xref" href="BOOSE.StoredProgramException.html">StoredProgramException</a></td>
         <td><p>Thrown if an infinite loop is detected or there is a missing &quot;end&quot; command.</p>
 </td>
       </tr>
@@ -236,7 +305,7 @@ Inherits from the <span class="xref">BOOSE.StoredProgram</span> class and provid
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">BOOSE.IStoredProgram</span>
+      <a class="xref" href="BOOSE.IStoredProgram.html">IStoredProgram</a>
   </div>
 </article>
           </div>

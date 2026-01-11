@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class AppCanvas
-   | BOOSEapp Documentation </title>
+   </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AppCanvas
-   | BOOSEapp Documentation ">
+   ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -19,7 +19,7 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    <meta property="docfx:rel" content="../">
+    
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -58,16 +58,6 @@
           </div>
         </div>
       </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
-          </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
-        </div>
-      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -84,7 +74,8 @@
   <h1 id="ASE_Assignment_AppCanvas" data-uid="ASE_Assignment.AppCanvas" class="text-break">Class AppCanvas
   </h1>
   <div class="markdown level0 summary"><p>Represents a drawable canvas that supports shapes, lines, text, and color operations.
-Provides methods required by the BOOSE <span class="xref">BOOSE.ICanvas</span> interface.</p>
+Provides methods required by the BOOSE <a class="xref" href="BOOSE.ICanvas.html">ICanvas</a> interface.
+Implements the Singleton pattern to ensure only one drawing surface exists.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -94,30 +85,42 @@ Provides methods required by the BOOSE <span class="xref">BOOSE.ICanvas</span> i
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><span class="xref">BOOSE.ICanvas</span></div>
+    <div><a class="xref" href="BOOSE.ICanvas.html">ICanvas</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ASE_Assignment.html">ASE_Assignment</a></h6>
   <h6><strong>Assembly</strong>: ASE_Assignment.dll</h6>
   <h5 id="ASE_Assignment_AppCanvas_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppCanvas : Object</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppCanvas : Object, ICanvas</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="properties">Properties
   </h3>
   
   
-  <a id="ASE_Assignment_AppCanvas__ctor_" data-uid="ASE_Assignment.AppCanvas.#ctor*"></a>
-  <h4 id="ASE_Assignment_AppCanvas__ctor" data-uid="ASE_Assignment.AppCanvas.#ctor">AppCanvas()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="ASE_Assignment.AppCanvas.html">AppCanvas</a> class.
-Creates a default bitmap and drawing surface.</p>
+  <a id="ASE_Assignment_AppCanvas_Instance_" data-uid="ASE_Assignment.AppCanvas.Instance*"></a>
+  <h4 id="ASE_Assignment_AppCanvas_Instance" data-uid="ASE_Assignment.AppCanvas.Instance">Instance</h4>
+  <div class="markdown level1 summary"><p>Singleton: Provides global access to the single instance of AppCanvas.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppCanvas()</code></pre>
+    <pre><code class="lang-csharp hljs">public static AppCanvas Instance { get; }</code></pre>
   </div>
-  <h3 id="properties">Properties
-  </h3>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ASE_Assignment.AppCanvas.html">AppCanvas</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="ASE_Assignment_AppCanvas_PenColour_" data-uid="ASE_Assignment.AppCanvas.PenColour*"></a>
@@ -243,7 +246,7 @@ Creates a default bitmap and drawing surface.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.CanvasException</span></td>
+        <td><a class="xref" href="BOOSE.CanvasException.html">CanvasException</a></td>
         <td><p>Thrown if the radius is zero or negative.</p>
 </td>
       </tr>
@@ -305,7 +308,7 @@ Creates a default bitmap and drawing surface.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.CanvasException</span></td>
+        <td><a class="xref" href="BOOSE.CanvasException.html">CanvasException</a></td>
         <td><p>Thrown if the target coordinates are outside the canvas.</p>
 </td>
       </tr>
@@ -383,12 +386,23 @@ Creates a default bitmap and drawing surface.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.CanvasException</span></td>
+        <td><a class="xref" href="BOOSE.CanvasException.html">CanvasException</a></td>
         <td><p>Thrown if the coordinates are outside the canvas.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="ASE_Assignment_AppCanvas_RealResetForTesting_" data-uid="ASE_Assignment.AppCanvas.RealResetForTesting*"></a>
+  <h4 id="ASE_Assignment_AppCanvas_RealResetForTesting" data-uid="ASE_Assignment.AppCanvas.RealResetForTesting">RealResetForTesting()</h4>
+  <div class="markdown level1 summary"><p>Resets the canvas for testing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RealResetForTesting()</code></pre>
+  </div>
   
   
   <a id="ASE_Assignment_AppCanvas_Rect_" data-uid="ASE_Assignment.AppCanvas.Rect*"></a>
@@ -440,7 +454,7 @@ Creates a default bitmap and drawing surface.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.CanvasException</span></td>
+        <td><a class="xref" href="BOOSE.CanvasException.html">CanvasException</a></td>
         <td><p>Thrown if width or height is zero or negative.</p>
 </td>
       </tr>
@@ -502,7 +516,7 @@ Creates a default bitmap and drawing surface.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.CanvasException</span></td>
+        <td><a class="xref" href="BOOSE.CanvasException.html">CanvasException</a></td>
         <td><p>Thrown if width or height is zero or negative.</p>
 </td>
       </tr>
@@ -559,7 +573,7 @@ Creates a default bitmap and drawing surface.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.CanvasException</span></td>
+        <td><a class="xref" href="BOOSE.CanvasException.html">CanvasException</a></td>
         <td><p>Thrown if any color component is outside the 0–255 range.</p>
 </td>
       </tr>
@@ -610,7 +624,7 @@ Creates a default bitmap and drawing surface.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.CanvasException</span></td>
+        <td><a class="xref" href="BOOSE.CanvasException.html">CanvasException</a></td>
         <td><p>Thrown if dimensions are zero or negative.</p>
 </td>
       </tr>
@@ -655,7 +669,7 @@ Creates a default bitmap and drawing surface.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BOOSE.CanvasException</span></td>
+        <td><a class="xref" href="BOOSE.CanvasException.html">CanvasException</a></td>
         <td><p>Thrown if text is null or empty.</p>
 </td>
       </tr>
@@ -663,7 +677,7 @@ Creates a default bitmap and drawing surface.</p>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">BOOSE.ICanvas</span>
+      <a class="xref" href="BOOSE.ICanvas.html">ICanvas</a>
   </div>
 </article>
           </div>
